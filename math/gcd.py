@@ -1,12 +1,8 @@
-
 def gcd(a, b):
-    # base case return result
-    if a % b == 0:
+    if a == 0:
         return b
-    else:
-        # recursive call
-        return gcd(a, (a % b))
-
+    divisor = b % a
+    return gcd(divisor, a)
 
 if __name__ == '__main__':
 
