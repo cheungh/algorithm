@@ -69,5 +69,18 @@ if __name__ == '__main__':
     Algorithmic Design and Techniques
     solution to knapsack
     Programming Challenge 3-2: Maximum Value of the Loot
+    
+        
+    algorithm
+    1. read items to be loot
+    2. sort items in reverse order
+        most valuable on the left
+    3. iterate from 0 to len(n)
+    4. check if there is room to put item in knapsack
+    5. Yes: (a) put item in knapsack, and 
+            (b) subtract knapsack capacity from current item weight
+    6. No:  (a) No room, break
+            (b) some room, but not enough: put remaining capacity of current item into knapsack
+    
     """
     print("total: is %.3f" % max_loot())
