@@ -1,6 +1,14 @@
 # randomized pivot to prevent O(n2)
 from random import randint
 
+# purpose of func
+# select a pivot
+# move smaller element to the left
+# move larger element to the right
+# return the pivot position
+# run divide and conquer on
+# 1. left of the pivot
+# 2. right of the pivot
 def partition(arr, low, high):
     # 1. select a pivot algorithm
     # print(arr)
@@ -15,13 +23,12 @@ def partition(arr, low, high):
         #   thus shifting the pivot point
         #   2. swap arr[i] with arr[j], the current and smaller index
         if arr[j] <= pivot_value:
-            # swap the pivot with the last smaller index + 1
-            # this is the pivot position
+
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
-            # return the pivot position which is smaller index + 1
-    arr[i+1], arr[high] = arr[high], arr[i+1]
-    # print(arr)
+            
+    arr[i+1], arr[high] = arr[high], arr[i+1] # swap the pivot with the last smaller index + 1, this is the pivot position
+    # return the pivot position which is smaller index + 1
     return i + 1
 
 
