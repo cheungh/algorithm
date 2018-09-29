@@ -40,28 +40,29 @@ def quick_sort(arr, low, high):
         quick_sort(arr, pivot + 1, high)
 
 if __name__ == '__main__':
-    
-# X = [4, 13, 8, 3, 1, 2]
-X = []
-end = 2000001
-for m in xrange(1, end):
-    X.append(randint(1, 12023))
-import time
-start = time.time()
-QuickSort(X, 0, len(X)-1)
-done = time.time()
-elapsed = done - start
-print(elapsed)
-print X[0]
-print X[end - 2]
-print "finished"
+
+    """
+    A = [20, 45, 93, 67, 10, 97, 52, 88, 33, 49]  # [6, 3, 17, 11, 4, 44, 76, 23, 12, 30]
+    quick_sort(A, 0, len(A) - 1)
+
+    print(A)
+    """
+    X = []
+    end = 2000001
+    for m in range(0, end):
+        X.append(randint(1, 12023))
+    import time
+    start = time.time()
+    quick_sort(X, 0, len(X)-1)
+    done = time.time()
+    elapsed = done - start
+    print(elapsed)
+    print(X[0])
+    print(X[end - 2])
+    print("finished")
 """
-using 2 cores cpu MHz: 3407.994 VM Centos7 4GB memory
-sorting 2M randomized integer from 1 to 12023
-quicksort is 100% slower than mergesort
-see my merge sort program
 program output
-27.1561751366
+43.372665882110596
 1
 12023
 finished
