@@ -1,8 +1,6 @@
 # randomized pivot to prevent O(n2)
 from random import randint
 
-from random import randint
-
 def partition(arr, low, high):
     # 1. select a pivot algorithm
     # print(arr)
