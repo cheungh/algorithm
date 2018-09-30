@@ -1,15 +1,12 @@
-# Python program to demonstrate insert operation in binary search tree  
-
-# A utility class that represents an individual node in a BST 
+# Node class that represents an individual node in a BST 
+# with left and right branch or leaf
 class Node:
     def __init__(self, key):
         self.left = None
         self.right = None
         self.val = key
-
-    # A utility function to insert a new node with the given key
-
-
+        
+# binary insert func
 def insert(root, node):
     # root ?
     if root is None:
@@ -28,8 +25,7 @@ def insert(root, node):
         else:
             root.right = node
 
-
-def b_search(tree, SV):
+def binary_search(tree, SV):
     # let result be return value
     # 1. found tree.value = SV
     # 2. tree.value > SV:
@@ -43,9 +39,9 @@ def b_search(tree, SV):
     if tree.val == SV:
         return 1
     elif tree.val > SV and tree.left is not None:
-        result = b_search(tree.left, SV)
+        result = binary_search(tree.left, SV)
     elif tree.val < SV and tree.right is not None:
-        result = b_search(tree.right, SV)
+        result = binary_search(tree.right, SV)
 
     return result
 
@@ -76,7 +72,7 @@ bst = Node(11)
 for i in a:
     insert(bst, Node(i))
 
-finding_result = b_search(bst, 14)
+finding_result = binary_search(bst, 14)
 print("finding 14: result: %s" % finding_result)
 
 inorder(bst)
