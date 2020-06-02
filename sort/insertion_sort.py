@@ -3,6 +3,7 @@ def insertion_sort(a, n):
     insertion sort algorithm
     # outer loop from left to right start from 1
     # inner loop from right to left end to right counter eq 0
+    start outer loop:
     1. compare 2 elements 
     2. and swap 
     3. and decrement right counter
