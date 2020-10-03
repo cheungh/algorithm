@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-03T05:17:29.356Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="HEtBLkJ-JhZN0e9Pwn04" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-03T05:45:05.775Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="IxQEWcq_U9QxVbiNxI_X" version="13.7.7" type="github">
   <diagram id="O0lDRIMXAkrLMIfufN-n" name="Page-1">
     <mxGraphModel dx="981" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -48,7 +48,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FinC79XKJ0Y0x9X4pj8Z-7" value="if i == 0 or&lt;br&gt;array[i] &amp;lt;&amp;gt; array[i+1]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="FinC79XKJ0Y0x9X4pj8Z-7" value="if i == 0 or&lt;br&gt;array[i] &amp;lt;&amp;gt; array[i-1]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="500" width="150" height="150" as="geometry" />
         </mxCell>
         <mxCell id="FinC79XKJ0Y0x9X4pj8Z-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.443;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FinC79XKJ0Y0x9X4pj8Z-13" target="FinC79XKJ0Y0x9X4pj8Z-27">
